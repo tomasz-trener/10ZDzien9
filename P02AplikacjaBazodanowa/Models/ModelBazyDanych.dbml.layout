@@ -2,11 +2,24 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ModelBazyDanych">
   <DataContextMoniker Name="/ModelBazyDanychDataContext" />
   <nestedChildShapes>
-    <classShape Id="0ab4f720-6fff-43a7-a41a-57dcdc0b6ef4" absoluteBounds="4.5, 1.875, 2, 2.5401025390625">
-      <DataClassMoniker Name="/ModelBazyDanychDataContext/Zawodnik" />
+    <classShape Id="adc8b24d-ee99-441c-855f-6f659c7caeba" absoluteBounds="6.125, 1.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/Trener" />
       <nestedChildShapes>
-        <elementListCompartment Id="984a5e8d-294a-4edc-9c44-b9379066e367" absoluteBounds="4.515, 2.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4f3cff31-ec9a-435b-9667-9a09417e181f" absoluteBounds="6.1400000000000006, 2.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="1afcee1a-5231-4364-bf18-4e7d6a2b57d5" absoluteBounds="2.75, 1.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/Zawodnik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59c563fe-2eaa-44bf-9cb3-2f02fb3906d9" absoluteBounds="2.765, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 2.66429768880208); (4.75 : 2.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelBazyDanychDataContext/Trener/trenerzy_zawodnicy" />
+      <nodes>
+        <classShapeMoniker Id="adc8b24d-ee99-441c-855f-6f659c7caeba" />
+        <classShapeMoniker Id="1afcee1a-5231-4364-bf18-4e7d6a2b57d5" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

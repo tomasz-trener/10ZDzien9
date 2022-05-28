@@ -89,6 +89,8 @@
     <Content Include="assets\js\plugins\bootstrap-notify.js" />
     <Content Include="assets\js\plugins\chartjs.min.js" />
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="CustomCssStyles\DropDownListyStyle.css" />
+    <Content Include="CustomJS\dropDownListJS.js" />
     <Content Include="Default.aspx" />
     <Content Include="Views\SzczegolyView.aspx" />
     <Content Include="Views\ZawodnicyView.aspx" />
@@ -107,9 +109,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Operations\TrenerzyOperation.cs" />
     <Compile Include="Operations\ZawodnicyOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\TrenerzyRepository.cs" />
     <Compile Include="Repositories\ZawodnicyRepository.cs" />
+    <Compile Include="ViewModels\TrenerVM.cs" />
     <Compile Include="ViewModels\ZawodnikVM.cs" />
     <Compile Include="Views\SzczegolyView.aspx.cs">
       <DependentUpon>SzczegolyView.aspx</DependentUpon>

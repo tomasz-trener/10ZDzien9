@@ -21,7 +21,8 @@ namespace P02AplikacjaBazodanowa.Operations
                 DataUr = x.data_ur,
                 Kraj = x.kraj,
                 Waga = x.waga,
-                Wzrost = x.wzrost
+                Wzrost = x.wzrost,
+                ImieNazwiskoTrenera = x.Trener?.imie_t + " " + x.Trener?.nazwisko_t
             };
         }
 
@@ -58,10 +59,10 @@ namespace P02AplikacjaBazodanowa.Operations
             zr.Edytuj(TransformujNaDB(z));
         }
 
-        public void Dodaj(ZawodnikVM z)
+        public int Dodaj(ZawodnikVM z)
         {
             ZawodnicyRepository zr = new ZawodnicyRepository();
-            zr.Dodaj(TransformujNaDB(z));
+            return zr.Dodaj(TransformujNaDB(z));
         }
 
         public void Usun(int id)

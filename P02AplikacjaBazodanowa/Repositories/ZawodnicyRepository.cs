@@ -35,11 +35,12 @@ namespace P02AplikacjaBazodanowa.Repositories
             db.SubmitChanges();
         }
 
-        public void Dodaj(Zawodnik z)
+        public int Dodaj(Zawodnik z)
         {
             ModelBazyDanychDataContext db = new ModelBazyDanychDataContext();
             db.Zawodnik.InsertOnSubmit(z);
             db.SubmitChanges();
+            return z.id_zawodnika;
         }
 
         public void Usun(int id)

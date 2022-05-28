@@ -159,7 +159,8 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Simple Table</h4>
+                                <h4 class="card-title">Zawodnicy</h4>
+                                <a href="SzczegolyView.aspx">Dodaj nowego zawodnika</a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -173,7 +174,9 @@
                                             </th>
                                             <th>Data Urodzenia
                                             </th>
-                                             <th>Waga
+                                            <th>Waga
+                                            </th>
+                                             <th>Trener
                                             </th>
                                         </thead>
                                         <tbody>
@@ -182,11 +185,9 @@
 
                                                 foreach (var z in Zawodnicy)
                                                 { %>
-
-
-                                            <tr>
+                                            <tr style="background-color: <%= z.KolorWyswietlania %>">
                                                 <td>
-                                              <a href="SzczegolyView.aspx?id=<%= z.Id %>"><%= z.ImieNazwisko %></a>      
+                                                    <a href="SzczegolyView.aspx?id=<%= z.Id %>"><%= z.ImieNazwisko %></a>
                                                 </td>
                                                 <td>
                                                     <%= z.Kraj %>
@@ -198,6 +199,7 @@
                                                     <%= z.DataUr %>
                                                 </td>
                                                 <td><%=z.Waga %></td>
+                                                <td><%= z.ImieNazwiskoTrenera %> </td>
                                             </tr>
 
 
