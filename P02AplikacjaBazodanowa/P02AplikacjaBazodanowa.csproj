@@ -84,8 +84,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Operations\ZawodnicyOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ZawodnicyRepository.cs" />
+    <Compile Include="ViewModels\ZawodnikVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\ModelBazyDanych.dbml">
