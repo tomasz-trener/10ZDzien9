@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8FC7EC78-DEAA-43F7-B10C-885368DAAE30}</ProjectGuid>
+    <ProjectGuid>{79E143CF-230D-44B1-AB98-1295AFA4E326}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>P02AplikacjaBazodanowa</RootNamespace>
-    <AssemblyName>P02AplikacjaBazodanowa</AssemblyName>
+    <RootNamespace>P03Wstawki</RootNamespace>
+    <AssemblyName>P03Wstawki</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44333</IISExpressSSLPort>
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -44,7 +44,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,30 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\css\bootstrap.min.css" />
-    <Content Include="assets\css\now-ui-dashboard.css" />
-    <Content Include="assets\css\now-ui-dashboard.min.css" />
-    <Content Include="assets\demo\demo.css" />
-    <Content Include="assets\demo\demo.js" />
-    <Content Include="assets\img\apple-icon.png" />
-    <Content Include="assets\img\bg5.jpg" />
-    <Content Include="assets\img\default-avatar.png" />
-    <Content Include="assets\img\favicon.png" />
-    <Content Include="assets\img\header.jpg" />
-    <Content Include="assets\img\mike.jpg" />
-    <Content Include="assets\img\now-logo.png" />
-    <Content Include="assets\img\now-ui-dashboard.gif" />
-    <Content Include="assets\js\core\bootstrap.min.js" />
-    <Content Include="assets\js\core\jquery.min.js" />
-    <Content Include="assets\js\core\popper.min.js" />
-    <Content Include="assets\js\now-ui-dashboard.js" />
-    <Content Include="assets\js\now-ui-dashboard.min.js" />
-    <Content Include="assets\js\plugins\bootstrap-notify.js" />
-    <Content Include="assets\js\plugins\chartjs.min.js" />
-    <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Default.aspx" />
-    <Content Include="Views\SzczegolyView.aspx" />
-    <Content Include="Views\ZawodnicyView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,81 +78,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelBazyDanych.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Operations\ZawodnicyOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ZawodnicyRepository.cs" />
-    <Compile Include="ViewModels\ZawodnikVM.cs" />
-    <Compile Include="Views\SzczegolyView.aspx.cs">
-      <DependentUpon>SzczegolyView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\SzczegolyView.aspx.designer.cs">
-      <DependentUpon>SzczegolyView.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ZawodnicyView.aspx.cs">
-      <DependentUpon>ZawodnicyView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\ZawodnicyView.aspx.designer.cs">
-      <DependentUpon>ZawodnicyView.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\ModelBazyDanych.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>ModelBazyDanych.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="assets\css\bootstrap.min.css.map" />
-    <Content Include="assets\css\now-ui-dashboard.css.map" />
-    <Content Include="assets\fonts\nucleo-license.md" />
-    <Content Include="assets\fonts\nucleo-outline.eot" />
-    <Content Include="assets\fonts\nucleo-outline.ttf" />
-    <Content Include="assets\fonts\nucleo-outline.woff" />
-    <Content Include="assets\fonts\nucleo-outline.woff2" />
-    <Content Include="assets\js\now-ui-dashboard.js.map" />
-    <Content Include="assets\scss\now-ui-dashboard.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\cards\_card-chart.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\cards\_card-map.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\cards\_card-plain.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\cards\_card-user.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_buttons.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_cards.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_dropdown.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_inputs.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_page-header.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_sidebar.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_transparency.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\mixins\_vendor-prefixes.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-animate-bootstrap-notify.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_alerts.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_buttons.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_cards.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_checkboxes-radio.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_dropdown.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_fixed-plugin.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_footers.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_images.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_inputs.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_misc.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_mixins.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_navbar.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_nucleo-outline.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_page-header.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_responsive.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_sidebar-and-main-panel.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_tables.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_typography.scss" />
-    <Content Include="assets\scss\now-ui-dashboard\_variables.scss" />
-    <None Include="Models\ModelBazyDanych.dbml.layout">
-      <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -184,9 +88,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -201,9 +102,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60844</DevelopmentServerPort>
+          <DevelopmentServerPort>62025</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44333/</IISUrl>
+          <IISUrl>https://localhost:44321/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

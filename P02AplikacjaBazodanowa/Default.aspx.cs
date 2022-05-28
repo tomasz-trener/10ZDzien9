@@ -100,5 +100,7 @@ namespace P02AplikacjaBazodanowa
             z.Waga = Convert.ToInt32(txtWaga.Text);
             z.Wzrost = Convert.ToInt32(txtWzrost.Text);
         }
+
+        //http://tomaszles.pl/2019/03/17/szablon-dashboard/
     }
 }
